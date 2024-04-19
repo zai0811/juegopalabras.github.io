@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+     
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+     
+  #guess-input {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    font-size: 18px;
+    width: 250px;
+    border: 1px solid #ccc;
+  }
+     
+  #guess-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0CBABA;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+  }
+     
+  button:active {
+      transform: scale(0.95);
+  }
+     
+  .letter {
+    width: 20px; /* Ancho deseado */
+    height: 20px; /* Alto deseado */
+      border: 1px solid black;
+      padding: 5px;
+      margin: 0px 13px 0px 13px ;
+      min-width: 20px;
+      text-align: center;
+      display: inline-block;
+  }
+     
+  .row{
+      margin-bottom: 10px;
+ 
+  }
+  
+
+  .input-area{
+      margin: 30px;
+  }
+
+
+
+  /* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el modal */
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Estilos para el botón de cerrar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+/* Estilos CSS para los botones */
+.button-container {
+  text-align: center;
+}
+#reiniciar{
+  display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #a5afaf;
+    border: none;
+    border-radius: 3px;
+}
+#guess-button, #reiniciar {
+  display: inline-block;
+  margin-right: 10px; /* Espacio entre los botones */
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 20%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 5px ;
+}
+
+th, td {
+  padding: 8px 12px;
+  text-align: left;
+  tex
+ 
+
+
+  
+}
+
+th {
+  background-color: #0CBABA; /* Fondo de la primera fila (encabezados) */
+  color: white; /* Color de texto en la primera fila */
+}
+
+th.acertado {
+  background-color: green; /* Fondo verde para "Acertado" */
+}
+
+th.posicion-incorrecta {
+  background-color: yellow; /* Fondo amarillo para "Posición Incorrecta" */
+}
+
+th.no-existe {
+  background-color: gray; /* Fondo gris para "No Existe" */
+}

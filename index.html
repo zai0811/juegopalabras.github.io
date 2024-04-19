@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Wordle PPY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Wordle PPY</h1>
+    <input type="text" id="guess-input" placeholder="Ingresa una palabra de 5 letras">
+    <div class="button-container">
+        <button id="guess-button">Intentar</button>
+        <button type="button" class="btn btn-secondary" id="reiniciar">Reiniciar</button>
+    </div>
+    <p style="text-align: center;">Intentos restantes: <span id="idIntentos">6</span></p>
+    <table  >
+        <tr>
+            <th class="acertado" style="color: black; size: 10px;">Acertado</th>
+            <th class="posicion-incorrecta" style="color: black; size: 10px;">Posición Incorrecta</th>
+            <th class="no-existe" style="color: black; size: 10px;">No Existe</th>
+        </tr>
+        
+    </table>
+    <div style="text-align: center "  id="grid"></div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" data-target="myModal">&times;</span>
+                <p id="modal-message"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
